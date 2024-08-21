@@ -8,6 +8,7 @@
     height: 100vh;
 }
 
+/* DYVKA */
 .navbar{
     width: 77%;
     height: 4.5%;
@@ -163,6 +164,85 @@
     font-size: 31px;
     text-shadow: 0 0 1px #0136a853;
 }
+
+
+/* OUR TEAM */
+.OurTeam{
+    margin-top: 100px;
+    width: 100%;
+    position: relative;
+    text-align: center;
+  }
+  .OurTeam::before {
+    content: '';
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    width: 100%;
+    height: 55%;
+    transform: translate(-50%, -50%) skewY(13deg);
+    z-index: -1;
+  }
+  span{
+    color: #0135A8;
+    font-weight: 650;
+  }
+  .OurTeam h2 {
+    font-family: Poppins;
+    font-weight: 600;
+    font-size: 36px;
+    margin-bottom: 50px;
+  }
+  
+  .team-cards {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 20px;
+    margin: 0 auto;
+  }
+  .team-card {
+    background: white;
+    padding: 10px 20px;
+    margin: 20px 15px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    position: relative;
+    border: #0135A8 2px solid;
+  }
+  .team-img {
+    width: 80px;
+    height: 80px;
+    background-color: #ccc;
+    border-radius: 50%;
+    margin: 0 auto -70px;
+    position: relative;
+    top: -60px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    overflow: hidden;
+  }
+  .team-card h3 {
+    font-family: Poppins;
+    color: #0336A7;
+    margin-top: 40px;
+    font-size: 22px;
+    font-weight: 600;
+  }
+  .team-card p {
+    font-family: Poppins;
+    font-size: 15px;
+    font-weight: 300;
+    color: #000;
+    margin: 10px 0 20px;
+  }
+  .team-card h4 {
+    font-family: Poppins;
+    font-weight: 500;
+    color: #000;
+  }
+  /* OUR TEAM END */
 
 /* Keyfream */
 
