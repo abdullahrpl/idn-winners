@@ -1,0 +1,208 @@
+*{
+    padding: 0;
+    margin: 0;
+    font-family: "Poppins", sans-serif;
+}
+.hero{
+    width: 100vw;
+    height: 100vh;
+}
+
+.navbar{
+    width: 77%;
+    height: 4.5%;
+    margin: 20px auto;
+    position: sticky;
+    top: 0;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background-color: white;
+    border-top: 5px solid #0135A8;
+    box-shadow: 0 3px 15px -8px rgba(1, 53, 168, 0.5);
+    border-radius: 40px;
+    padding: 16px 58px;
+    z-index: 1000;
+    animation: fadeInDown 1s ease-in-out forwards;
+}
+
+.idn-winners{
+    font-size: 18px;
+    display: inline-block;
+    font-weight: 700;
+    cursor: pointer;
+}
+
+.blue{
+    color: #0135A8;
+    text-shadow: 0 0 200px #0135A8;
+}
+
+.menu ul{
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    gap: 30px;
+}
+.menu ul li{
+    position: relative;
+    margin: 0 25px;
+}
+.menu ul li a{
+    text-decoration: none;
+    font-size: 15px;
+    color: grey;
+    padding: 10px 0;
+    transition: color 0.3s, transform 0.3s;
+    transform: scale(1.05);
+}
+.menu ul li a:hover, .menu ul li a.active {
+    color: #0135A8;
+    transform: scale(1.05);
+}
+.menu ul li a::after{
+    content: "";
+    height: 2px;
+    width: 0;
+    background: #0135A8;
+    color: #0135A8;
+    position: absolute;
+    left: 0;
+    bottom: -5px;
+    transition: 0.3s ease-in-out;
+}
+.menu ul li a:hover::after, .menu ul li a.active::after {
+    width: 99%;
+}
+
+.btn-contact{
+    text-decoration: none;
+    padding: 7px 32px;
+    background-color: #0135A8;
+    color: white;
+    border-radius: 25px;
+    box-shadow: 0 0 15px -10px rgba(1, 53, 168, 0.7);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+.btn-contact:hover{
+    transform: translateY(-5px);
+    box-shadow: 0 0 20px -5px #0135A8;
+}
+
+.content {
+    width: 85%;
+    margin: 20px auto;
+    position: sticky;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 15px;
+    margin-top: 150px;
+}
+
+.text-title {
+  width: 100%;
+  height: 100%;
+  display: inline;
+  color: black;
+  animation: fadeInRight 1s ease-in-out forwards;
+}
+.text-title h1{
+    font-size: 48px;
+    margin-bottom: 30px;
+}
+.text-title p{
+    margin-bottom: 65px;
+    font-size: 15px;
+    font-weight: 400;
+
+}
+.image{
+    width: 100px;
+}
+.btn-about{
+    text-decoration: none;
+    padding: 9px 30px;
+    background-color: #0135A8;
+    color: white;
+    border-radius: 5px;
+    box-shadow: 0 0 15px -10px #0135A8;
+    margin-right: 20px;
+    transition: 0.3s;
+}
+.btn-about:hover{
+    transform: translateY(-5px);
+    box-shadow: 0 0 20px -5px #0135A8;
+}
+.btn-read{
+    text-decoration: none;
+    padding: 9px 30px;
+    border: 1px solid #0135A8;
+    color: #0135A8;
+    border-radius: 5px;
+    box-shadow: 0 0 15px -10px #0135A8;
+    transition: 0.3s;
+}
+.btn-read:hover{
+    background-color: #0135A8;
+    color: white;
+}
+
+.footer-hero{
+    width: 85%;
+    margin: 120px auto;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+
+}
+.text-footer h1{
+    text-align: center;
+    color: #0135A8;
+    font-size: 31px;
+    text-shadow: 0 0 1px #0136a853;
+}
+
+/* Keyfream */
+
+@keyframes fadeInUp {
+    0% {
+        opacity: 0;
+        transform: translateY(30px);
+    }
+    100% {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+@keyframes fadeInDown {
+    0% {
+        opacity: 0;
+        transform: translateY(-30px);
+    }
+    100% {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+@keyframes fadeInRight {
+    0% {
+        opacity: 0;
+        transform: translateX(-30px);
+    }
+    100% {
+        opacity: 1;
+        transform: translateX(0);
+    }
+}
+@keyframes fadeInLeft {
+    0% {
+        opacity: 0;
+        transform: translateX(30px);
+    }
+    100% {
+        opacity: 1;
+        transform: translateX(0);
+    }
+}
