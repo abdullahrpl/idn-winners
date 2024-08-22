@@ -165,6 +165,58 @@
     text-shadow: 0 0 1px #0136a853;
 }
 
+/* Course */
+
+
+.nav-course {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #fff;
+    padding: 40px;
+}
+
+.nav-course ul li {
+    font-size: 28px;
+}
+
+.nav-course li {
+    list-style: none;
+    display: inline-block;
+    margin-right: 60px;
+}
+
+.nav-course li a {
+    color: #fff;
+    text-decoration: none;
+
+}
+
+.personal-box {
+    background-color: #0135A8;
+    border-radius: 50px;
+    display: flex;
+    justify-content: flex-end;
+    align-items: flex-end;
+    padding: 5px 25px;
+    box-shadow: 0px 10px 15px #7AA3FF;
+    transition: background-color 0.3s ease;
+}
+
+.personal-box:hover {
+    background-color: #7EA3FF;
+}
+
+.personal-box a {
+    justify-content: center;
+    align-items: center;
+    display: inline-block;
+}
+
+img {
+    margin-right: 15px;
+}
+/* Course End */
 
 /* OUR TEAM */
 .OurTeam{
