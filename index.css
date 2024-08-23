@@ -319,14 +319,15 @@ body{
   }
   .left-side{
     color: white;
+    height: 100%;
     width: 50%;
-    margin-top: 3rem;
     margin-left: 2rem;
+    margin-top: 5rem;
   }
   .left-side h4{
     font-size: 16px;
     font-weight: normal;
-    margin-bottom: 10px;
+    margin-bottom: 20px;
   }
   .left-side h1{
     font-size: 36px;
@@ -334,15 +335,39 @@ body{
     margin-bottom: 20px;
     margin-top: 20px;
   }
+
+
   .right-side{
+    height: 100%;
     width: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  .right-side img{
+    height: 10cm;
+    margin-bottom: 3rem;
+    margin-left: 10rem;
   }
 
   .bootcamp button{
-    margin-top: 20rem;
-    margin-right: 50rem;
-    height: 30px;
-    width: 100px;
+    margin-top: 2.5rem;
+    margin-left: 40rem;
+    height: 40px;
+    width: 130px;
+    font-size: 15px;
+    font-weight: 500;
+    text-decoration: none;
+    border-radius: 10px;
+    border: none;
+    color: white;
+    cursor: pointer;
+    background-color: #0135A8;
+    transition: 0.5s;
+  }
+  .bootcamp button:hover{
+    transform: translateY(-5px);
+    box-shadow: 0 0 20px -5px #0135A8;
   }
   /* BOOTCAMP END */
 
@@ -387,15 +412,5 @@ body{
     100% {
         opacity: 1;
         transform: translateX(0);
-    }
-}
-@keyframes appear{
-    from{
-        opacity: 0.5;
-        scale: 0.5;
-    }
-    to{
-        opacity: 1;
-        scale: 1;
     }
 }
