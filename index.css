@@ -473,7 +473,7 @@ body {
     margin-bottom: 70px;
     display: flex;
     align-items: center;
-    background-color: #0135A8;
+    background: linear-gradient(to right bottom, #0135A8, #588DF7);
     border-radius: 20px;
 }
 
