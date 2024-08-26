@@ -229,7 +229,56 @@ body{
     background-color: #0135A8;
     color: white;
 }
+.course-option {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
 
+.course-box {
+    background-color: #588DF7;
+    border-radius: 10px;
+    padding: 40px;
+    width: 25%;
+    margin-top: 5%;
+    margin-left: 10px;
+    color: #fff;
+    box-shadow: 0px 10px 15px #7AA3FF;
+    justify-content: center;
+    align-items: center;
+    display: flex;
+    animation: fadeInUp 1s ease-in-out;
+}
+
+.course-content h1 {
+    font-size: 24px;
+    margin-bottom: 10px;
+}
+
+.course-content p {
+    margin-bottom: 5px;
+    font-size: 18px;
+}
+
+.course-content a {
+    border: solid#fff;
+    border-radius: 5px;
+    font-size: 16px;
+    padding: 10px;
+    color: #fff;
+    text-decoration: none;
+    margin-top: 15px;
+    align-items: center;
+    justify-content: center;
+    display: inline-block;
+    transition: 0.5s;
+    animation: fadeInUp 1s ease-in-out;
+}
+
+.course-content a:hover {
+    background-color: #ffF;
+    color: #0135A8;
+}
 /* Course End */
 
 /* OUR TEAM */
