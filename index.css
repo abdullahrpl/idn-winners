@@ -310,9 +310,14 @@ body{
     flex-direction: column;
     align-items: center;
   }
+  .bootcamps h2 {
+    font-size: 30px;
+    margin-bottom: 100px;
+  }
   .bootcamp{
     width: 100%;
     height: 80%;
+    margin-bottom: 70px;
     display: flex;
     align-items: center;
     background-color: #588DF7;
