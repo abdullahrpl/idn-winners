@@ -104,7 +104,7 @@
             </div>
         </div>
         <div class="main-container">
-            <div class="card-row">
+            <div class="card-row1">
                 <div class="card">
                     <div class="card-header">Web Developer</div>
                     <div class="card-content">
@@ -131,7 +131,7 @@
                 </div>
             </div>
 
-            <div class="card-row">
+            <div class="card-row2">
                 <div class="card">
                     <div class="card-header">App Developer</div>
                     <div class="card-content">
@@ -211,6 +211,59 @@
             </div>
         </div>
     </section>
+    <section class="faq-section">
+        <div class="faq-header">
+            <h1>Frequently <span class="blue">Asked</span> Question</h1>
+            <p>Visit our Help Center for more information</p>
+        </div>
+        <div class="faq-container">
+            <div class="faq-item">
+                <div class="faq-question">
+                    What is IDN Winners course?
+                    <span class="faq-icon">+</span>
+                </div>
+                <div class="faq-answer">
+                    <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Quos modi reiciendis tenetur eligendi optio repellendus ad perferendis quibusdam doloremque enim odio expedita voluptatem, quidem sunt non vitae nobis repudiandae officiis.</p>
+                </div>
+            </div>
+            <div class="faq-item">
+                <div class="faq-question">
+                    What courses do we provide?
+                    <span class="faq-icon">+</span>
+                </div>
+                <div class="faq-answer">
+                    <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Repellat aperiam pariatur soluta rem autem consequatur maxime ad, fugit perspiciatis, dolores consectetur minima possimus necessitatibus quaerat error facilis eum. Consectetur, maxime.</p>
+                </div>
+            </div>
+            <div class="faq-item">
+                <div class="faq-question">
+                    Are our teachers experts?
+                    <span class="faq-icon">+</span>
+                </div>
+                <div class="faq-answer">
+                    <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Vero ad quis quae nulla numquam tempora tenetur eveniet corrupti provident quos, placeat eos quia neque ex explicabo illum laboriosam? Accusantium, dolor.</p>
+                </div>
+            </div>
+            <div class="faq-item">
+                <div class="faq-question">
+                    What are the advantages of the IDN Winners course compared to other courses?
+                    <span class="faq-icon">+</span>
+                </div>
+                <div class="faq-answer">
+                    <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Eos repellendus maiores quasi eligendi unde adipisci, voluptates ipsam, vitae praesentium et, quos incidunt eum provident eius ducimus perferendis minus saepe magnam.</p>
+                </div>
+            </div>
+            <div class="faq-item">
+                <div class="faq-question">
+                    Do we have to pay if we want to get a certificate?
+                    <span class="faq-icon">+</span>
+                </div>
+                <div class="faq-answer">
+                    <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Nesciunt ratione nam possimus debitis! Veniam, obcaecati earum. Molestiae, modi soluta nihil officia repellat ad asperiores, atque porro nesciunt sequi ex earum.</p>
+                </div>
+            </div>
+        </div>
+    </section>
     <section class="footer">
         <div class="footer-container">
             <div class="footer-top">
@@ -232,6 +285,23 @@
             </div>
         </div>
     </section>
+    <script>
+        const faqItems = document.querySelectorAll('.faq-item');
+    
+        faqItems.forEach(item => {
+            item.addEventListener('click', () => {
+                item.classList.toggle('open');
+                
+                const icon = item.querySelector('.faq-icon');
+                if (icon.textContent === '+') {
+                    icon.textContent = '-';
+                } else {
+                    icon.textContent = '+';
+                }
+            });
+        });
+    </script>
+    
 </body>
 
 </html>
