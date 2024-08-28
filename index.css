@@ -15,7 +15,8 @@ body {
     height: 70%;
 }
 
-/* DYVKA */
+/* NAVBAR */  /* NAVBAR */  /* NAVBAR */  /* NAVBAR */
+
 .navbar {
     width: 77%;
     height: 4.5%;
@@ -108,6 +109,8 @@ body {
     box-shadow: 0 0 20px -5px #0056D2;
 }
 
+/* HERO */  /* HERO */  /* HERO */   /* HERO */
+
 .content {
     width: 85%;
     margin: 60px auto;
@@ -140,10 +143,11 @@ body {
 
 }
 
-.image img{
+.image img {
     width: 100%;
 }
-.image{
+
+.image {
     width: 45%;
     display: flex;
     justify-content: center;
@@ -197,6 +201,8 @@ body {
     text-shadow: 0 0 1px #0136a853;
 }
 
+/* ABOUT */  /* ABOUT */  /* ABOUT */  /* ABOUT */
+
 .aboutUs-content {
     width: 100%;
     height: 20%;
@@ -206,39 +212,39 @@ body {
     padding: 15px 0;
     margin-top: 230px;
     background-color: #0056D2;
-  }
-  
-  .what-is {
+}
+
+.what-is {
     display: flex;
     align-items: center;
     animation: fadeInRight linear;
     animation-timeline: view();
-    animation-range: entry 0% cover 35%;
-  }
-  
-  .aboutUs-text {
+    animation-range: entry 0% cover 30%;
+}
+
+.aboutUs-text {
     display: flex;
     align-items: center;
     font-size: 28px;
     font-weight: 600;
     color: #fff;
     animation: fadeInLeft linear;
-  }
-  
-  .aboutUs-logo {
+}
+
+.aboutUs-logo {
     display: flex;
     align-items: center;
     margin: 0 200px;
     animation: fadeInUp linear;
     animation-timeline: view();
-    animation-range: entry 0% cover 35%;
-  }
-  
-  .aboutUs-logo img {
+    animation-range: entry 0% cover 30%;
+}
+
+.aboutUs-logo img {
     width: 170px;
-  }
-  
-  .Idn-Winners-Is {
+}
+
+.Idn-Winners-Is {
     width: 330px;
     height: 250px;
     color: #fff;
@@ -249,10 +255,10 @@ body {
     font-family: "poppins";
     animation: fadeInLeft linear;
     animation-timeline: view();
-    animation-range: entry 0% cover 35%;
-  }
+    animation-range: entry 0% cover 30%;
+}
 
-/* Course */
+/* COURSE */  /* COURSE */  /* COURSE */  /* COURSE */
 
 .course {
     width: 100%;
@@ -282,9 +288,9 @@ body {
     box-shadow: 0 0 15px -7px #0056D2;
     cursor: pointer;
     transition: background-color 0.3s ease;
-    animation: fadeInUp linear;  
+    animation: fadeInUp linear;
     animation-timeline: view();
-    animation-range: entry 0% cover 35%;
+    animation-range: entry 0% cover 30%;
 }
 
 .personal-box1 {
@@ -296,9 +302,9 @@ body {
     box-shadow: 0 0 15px -7px #0056D2;
     cursor: pointer;
     transition: background-color 0.3s ease;
-    animation: fadeInUp linear;  
+    animation: fadeInUp linear;
     animation-timeline: view();
-    animation-range: entry 0% cover 35%;
+    animation-range: entry 0% cover 30%;
 }
 
 .personal-box h1,
@@ -332,16 +338,17 @@ body {
     animation: fadeInUp 1s ease-in-out forwards;
 }
 
-.card-row1, .card-row2 {
+.card-row1,
+.card-row2 {
     display: flex;
     justify-content: center;
     margin-bottom: 30px;
-    animation: fadeInUp linear;  
+    animation: fadeInUp linear;
     animation-timeline: view();
-    animation-range: entry 0% cover 35%;
+    animation-range: entry 0% cover 30%;
 }
 
-.card {
+.card1, .card2, .card3 {
     background-color: #0056D2;
     color: #ffffff;
     border-radius: 15px;
@@ -353,7 +360,25 @@ body {
     transition: 0.3s ease-in-out;
 }
 
-.card:hover {
+.card1{
+    animation: fadeInRight linear;
+    animation-timeline: view();
+    animation-range: entry 0% cover 30%;
+}
+
+.card2{
+    animation: fadeInUp linear;
+    animation-timeline: view();
+    animation-range: entry 0% cover 30%;
+}
+
+.card3{
+    animation: fadeInLeft linear;
+    animation-timeline: view();
+    animation-range: entry 0% cover 30%;
+}
+
+.card1:hover, .card2:hover, .card3:hover {
     transform: translateY(-10px);
     box-shadow: 0 0 20px -5px #0056D2;
 }
@@ -387,14 +412,13 @@ body {
     display: inline-block;
 }
 
-/* Course End */
+/* OUR TEAM */  /* OUR TEAM */  /* OUR TEAM */  /* OUR TEAM */
 
-/* OUR TEAM */
 .ourteam {
     width: 100%;
     position: relative;
     text-align: center;
-    animation: fadeInUp 1s ease-in-out forwards;    
+    animation: fadeInUp 1s ease-in-out forwards;
     margin-top: 150px;
 }
 
@@ -408,14 +432,14 @@ body {
     background-color: #2d88f220;
     transform: translate(-50%, -50%) skewY(10deg);
     z-index: -1;
-  }
+}
 
 .ourteam h2 {
     font-size: 40px;
     margin-bottom: 100px;
     animation: fadeInUp linear;
     animation-timeline: view();
-    animation-range: entry 0% cover 35%;
+    animation-range: entry 0% cover 30%;
 }
 
 .dev-cards {
@@ -425,7 +449,7 @@ body {
     margin: 0 auto;
 }
 
-.dev-card {
+.dev-card1, .dev-card2, .dev-card3 {
     flex-direction: column;
     background: white;
     padding: 20px;
@@ -434,9 +458,24 @@ body {
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
     border: #0056D2 0.3px solid;
     transition: 0.3s ease-in-out;
+}
+
+.dev-card1{
+    animation: fadeInRight linear;
+    animation-timeline: view();
+    animation-range: entry 0% cover 30%;
+}
+
+.dev-card2{
     animation: fadeInUp linear;
     animation-timeline: view();
-    animation-range: entry 0% cover 35%;
+    animation-range: entry 0% cover 30%;
+}
+
+.dev-card3{
+    animation: fadeInLeft linear;
+    animation-timeline: view();
+    animation-range: entry 0% cover 30%;
 }
 
 .dev-card:hover {
@@ -456,7 +495,7 @@ body {
     overflow: hidden;
 }
 
-.rotate{
+.rotate {
     transform: rotate(90deg);
 }
 
@@ -466,26 +505,27 @@ body {
     object-fit: cover;
 }
 
-.dev-card h3 {
+.dev-card1 h3, .dev-card2 h3, .dev-card3 h3 {
     margin-top: 50px;
     font-size: 22px;
     font-weight: 700;
 }
 
-.dev-card p {
+.dev-card1 p, .dev-card2 p, .dev-card3 p {
     font-size: 14px;
     color: #666;
     margin: 20px 0 25px;
     line-height: 1.5;
 }
 
-.dev-card h4 {
+.dev-card1 h4, .dev-card2 h4, .dev-card3 h4 {
     font-size: 1em;
     color: #0056D2;
     font-weight: normal;
 }
 
-/* BOOTCAMP */
+/* BOOTCAMP */  /* BOOTCAMP */  /* BOOTCAMP */  /* BOOTCAMP */
+
 .Bootcamp {
     width: 80%;
     height: 50%;
@@ -518,7 +558,7 @@ body {
     margin-top: 5rem;
     animation: fadeInRight linear;
     animation-timeline: view();
-    animation-range: entry 0% cover 35%;
+    animation-range: entry 0% cover 30%;
 }
 
 .left-side h4 {
@@ -542,7 +582,7 @@ body {
     justify-content: center;
     animation: fadeInLeft linear;
     animation-timeline: view();
-    animation-range: entry 0% cover 35%;
+    animation-range: entry 0% cover 30%;
 }
 
 .right-side img {
@@ -570,7 +610,7 @@ body {
     box-shadow: 0 0 20px -5px #0056D2;
 }
 
-/* BOOTCAMP END */
+/* FAQ */  /* FAQ */  /* FAQ */  /* FAQ */
 
 .faq-section {
     width: 80%;
@@ -586,7 +626,7 @@ body {
     font-size: 40px;
     animation: fadeInUp linear;
     animation-timeline: view();
-    animation-range: entry 0% cover 35%;
+    animation-range: entry 0% cover 30%;
 }
 
 .faq-header p {
@@ -595,7 +635,7 @@ body {
     margin-bottom: 100px;
     animation: fadeInUp linear;
     animation-timeline: view();
-    animation-range: entry 0% cover 35%;
+    animation-range: entry 0% cover 30%;
 }
 
 .faq-header a {
@@ -623,7 +663,7 @@ body {
     color: #333;
     animation: fadeInUp linear;
     animation-timeline: view();
-    animation-range: entry 0% cover 35%;
+    animation-range: entry 0% cover 30%;
 }
 
 .faq-icon {
@@ -647,7 +687,8 @@ body {
     content: "-";
 }
 
-/* Footer */
+/* FOOTER */  /* FOOTER */  /* FOOTER */  /* FOOTER */
+
 .footer {
     background-color: #0056D2;
     padding: 40px 20px;
@@ -661,7 +702,7 @@ body {
     margin: 0 auto;
     animation: fadeInUp linear;
     animation-timeline: view();
-    animation-range: entry 0% cover 35%;
+    animation-range: entry 0% cover 30%;
 }
 
 .footer-top h2 {
@@ -675,7 +716,7 @@ body {
     margin-bottom: 20px;
 }
 
-.footer-top img{
+.footer-top img {
     width: 100px;
 }
 
@@ -701,7 +742,7 @@ body {
 .footer-bottom {
     display: flex;
     align-items: center;
-    justify-content: space-evenly ;
+    justify-content: space-evenly;
     border-top: 1px solid rgba(255, 255, 255, 0.2);
     padding-top: 20px;
     margin-top: 30px;
@@ -724,7 +765,7 @@ body {
     color: #588DF7;
 }
 
-/* Keyframes */
+/* --- KEYFREAM --- */
 
 
 @keyframes fadeInUp {
