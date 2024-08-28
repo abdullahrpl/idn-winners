@@ -77,3 +77,31 @@ input{
     font-size: 15px;
     border-bottom: solid 2px #000;
 }
+.remember-password{
+    display: flex;
+    align-items: center;
+    margin-top: 10px;
+}
+.remember-password label{
+    margin-left: 0.5rem;
+}
+
+button{
+    outline: none;
+    align-self: center;
+    margin-top: 50px;
+    border: none;
+    font-weight: bold;
+    color: white;
+    background-color: #588DF7;
+    border-radius: 6px;
+    transition: 0.5s;
+    width: 80%;
+    height: 30px;
+}
+
+button:hover {
+    cursor: pointer;
+    transform: translateY(-5px);
+    box-shadow: 0 0 20px -5px #0056D2;
+}
