@@ -151,7 +151,7 @@ body {
     width: 45%;
     display: flex;
     justify-content: center;
-    animation: fadeInLeft 1s ease-in-out forwards;
+    animation: fadeInLeft 1s ease-in-out forwards, pop 1.5s infinite alternate;
 }
 
 .btn-about {
@@ -771,6 +771,13 @@ body {
 
 /* --- KEYFREAM --- */
 
+@keyframes pop {
+    from{
+        transform: translateY(-15px);
+    } to{
+        transform: translateY(0);
+    }
+}
 
 @keyframes fadeInUp {
     0% {
