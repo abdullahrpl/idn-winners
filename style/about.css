@@ -136,7 +136,7 @@ body {
     margin-bottom: 80px;
     animation: fadeInDown 1s ease-in-out forwards;
 }
-
+/* DESCRIPTION */
 .description {
     display: flex;
     justify-content: center;
