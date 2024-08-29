@@ -142,7 +142,7 @@ body {
     text-align: center;
     animation: fadeInDown 1s ease-in-out forwards;
 }
-
+/* OUR TEAM */
 .dev-cards {
     display: flex;
     gap: 30px;
@@ -173,7 +173,7 @@ body {
     animation: fadeInLeft 1s ease-in-out forwards;
 }
 
-.dev-card:hover {
+.dev-card1:hover, .dev-card2:hover, .dev-card3:hover {
     transform: translateY(-5px);
     box-shadow: 0 0 20px -5px #0056D2;
 }
