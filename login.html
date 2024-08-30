@@ -6,11 +6,15 @@
     <title>Login</title>
     <link rel="stylesheet" href="style/login.css">
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
+    <link rel="icon" href="Images/idn-logo.png" type="image/png">
 </head>
 <body>
     <section class="login-page">
         <section class="left">
-
+            <h1 class="h-1" style="color: aqua;">H1</h1>
+            <h1 class="h-2" style="color: greenyellow;">Us3r</h1>
+            <h1 class="h-3" style="color: white;">Please</h1>
+            <h1 class="h-4" style="color: red;">L0g1n</h1>
         </section>
         <section class="right">
             <div class="right-title">
@@ -19,7 +23,7 @@
                 <p>Sign-in  to continue</p>
             </div>
             <div class="login-form">
-                <form action="">
+                <form action="index.html">
                     <label for="username">Username:</label>
                     <input type="text" id="username" name="username" placeholder="Username" required>
 
@@ -30,10 +34,18 @@
                         <input type="checkbox" class="remember" id="remember" name="remember">
                         <label for="remember">Remember Password</label>
                     </div>
-                    <button type="submit">Login</button>
+                    <button onclick="login()" type="submit">Login</button>
                 </form>
             </div>
         </section>
     </section>
+
+    <script>
+        function login() {
+            const password = document.getElementById("password").value;
+            const username = document.getElementById("username").value;
+            localStorage.setItem('username', username);
+        }
+    </script>
 </body>
 </html>

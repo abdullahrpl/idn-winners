@@ -26,12 +26,21 @@
             </ul>
         </div>
         <div class="contact">
-            <a class="btn-contact" href="#">Contact</a>
+            <a id="user" class="btn-contact" href="login.html">Login</a>
         </div>
     </div>
 
     <!-- HERO -->  <!-- HERO -->  <!-- HERO -->  <!-- HERO -->
-     
+   
+    <script>
+        const user = document.getElementById("user")
+        const username = localStorage.getItem('username');
+        if(username){
+            user.href = '#'
+            document.getElementById('user').textContent = username;
+        }
+    </script>
+
     <section class="hero">
         <div class="container-hero">
             <div class="title">
