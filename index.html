@@ -106,23 +106,23 @@
 
     <section class="course">
         <div class="nav-course">
-            <div class="personal-box1">
+            <div onclick="" class="personal-box">
                 <img src="Images/all.png" alt="All Courses">
                 <h1>All</h1>
             </div>
-            <div class="personal-box">
+            <div onclick="" class="personal-box">
                 <img src="Images/c.png" alt="CSharp Course">
                 <h1>CSharp</h1>
             </div>
-            <div class="personal-box">
+            <div onclick="" class="personal-box">
                 <img src="Images/html.png" alt="HTML Course">
                 <h1>HTML</h1>
             </div>
-            <div class="personal-box">
+            <div onclick="" class="personal-box">
                 <img src="Images/python.png" alt="Python Course">
                 <h1>Python</h1>
             </div>
-            <div class="personal-box">
+            <div onclick="" class="personal-box">
                 <img src="Images/javas.png" alt="Java Course">
                 <h1>Java</h1>
             </div>
@@ -325,8 +325,10 @@
             <div class="footer-right">
                 <p>Join our comunity</p>
                 <div class="newsletter">
-                    <input type="email" placeholder="Enter your email">
-                    <button>Subscribe</button>
+                    <form>
+                        <input id="emailinput" type="email" placeholder="Enter your email" required>
+                        <button type="submit">Subscribe</button>  
+                    </form>
                 </div>
             </div>
         </div>
@@ -344,6 +346,19 @@
 
     <script>
         const faqItems = document.querySelectorAll('.faq-item');
+        const courseItem = document.querySelectorAll('.personal-box')
+
+        courseItem.forEach(item => {
+            item.addEventListener('click', () => {
+                courseItem.forEach(otherItem => {
+                    if (otherItem !== item) {
+                        otherItem.classList.remove('active');
+                    }
+                });
+
+                item.classList.toggle('active');
+            });
+        })
 
         faqItems.forEach(item => {
             item.addEventListener('click', () => {
