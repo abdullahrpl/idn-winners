@@ -11,8 +11,8 @@
 </head>
 
 <body>
-    
-    <!-- NAVBAR -->  <!-- NAVBAR -->  <!-- NAVBAR -->  <!-- NAVBAR -->
+
+    <!-- NAVBAR --> <!-- NAVBAR --> <!-- NAVBAR --> <!-- NAVBAR -->
 
     <div class="navbar">
         <div class="logo">
@@ -32,11 +32,10 @@
         </div>
     </div>
 
-    <!-- HERO -->  <!-- HERO -->  <!-- HERO -->  <!-- HERO -->
+    <!-- HERO --> <!-- HERO --> <!-- HERO --> <!-- HERO -->
     <script>
         const user = document.getElementById("user")
         const username = localStorage.getItem('username');
-
         if (username) {
             user.href = '#'
             document.getElementById('user').textContent = username;
@@ -50,8 +49,8 @@
                 <h1>UPGRADE YOUR <br> <span class="blue">KNOWLEDGE</span> NOW</h1>
                 <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Corporis <br> rerum quod minima fuga sint
                     qui, iure id! Officia, laborum quae?</p>
-                <a href="#" class="btn-about">About Us</a>
-                <a href="#" class="btn-read">Read More</a>
+                <a href="about.html" class="btn-about">About Us</a>
+                <a href="#About" class="btn-read">Read More</a>
             </div>
             <div class="image">
                 <img src="Images/illustrasi.png" alt="">
@@ -77,9 +76,9 @@
         </div>
     </section>
 
-    <!-- ABOUT -->  <!-- ABOUT -->  <!-- ABOUT -->  <!-- ABOUT -->
+    <!-- ABOUT --> <!-- ABOUT --> <!-- ABOUT --> <!-- ABOUT -->
 
-    <section class="About">
+    <section class="About" id="About">
         <div class="about-us">
             <div class="aboutUs-content">
                 <div class="what-is">
@@ -103,34 +102,34 @@
         </div>
     </section>
 
-    <!-- COURSE -->  <!-- COURSE -->  <!-- COURSE -->  <!-- COURSE -->
+    <!-- COURSE --> <!-- COURSE --> <!-- COURSE --> <!-- COURSE -->
 
     <section class="course">
         <div class="nav-course">
-            <div class="personal-box" value="all">
+            <div onclick="showAllCourses()" class="personal-box active">
                 <img src="Images/all.png" alt="All Courses">
                 <h1>All</h1>
             </div>
-            <div class="personal-box" value="csharp">
+            <div onclick="showCsharpCourses()" class="personal-box">
                 <img src="Images/c.png" alt="CSharp Course">
                 <h1>CSharp</h1>
             </div>
-            <div class="personal-box" value="html">
+            <div onclick="showHtmlCourses()" class="personal-box">
                 <img src="Images/html.png" alt="HTML Course">
                 <h1>HTML</h1>
             </div>
-            <div class="personal-box" value="python">
+            <div onclick="showPythonCourses()" class="personal-box">
                 <img src="Images/python.png" alt="Python Course">
                 <h1>Python</h1>
             </div>
-            <div class="personal-box" value="java">
+            <div onclick="showJavaCourses()" class="personal-box">
                 <img src="Images/javas.png" alt="Java Course">
                 <h1>Java</h1>
             </div>
         </div>
         <div class="main-container">
             <div class="card-row1">
-                <div class="card1">
+                <div class="card1 html-card openPopup">
                     <div class="card-header">Web Developer</div>
                     <div class="card-content">
                         <h3>Make Personal Website Using HTML CSS</h3>
@@ -138,7 +137,7 @@
                         <div class="card-rating">⭐ 5.0</div>
                     </div>
                 </div>
-                <div class="card2">
+                <div class="card2 ai-card openPopup">
                     <div class="card-header">Artificial Intelligence</div>
                     <div class="card-content">
                         <h3>Basic Computer Science And Artificial Intelligence</h3>
@@ -146,7 +145,7 @@
                         <div class="card-rating">⭐ 5.0</div>
                     </div>
                 </div>
-                <div class="card3">
+                <div class="card3 data-science-card openPopup">
                     <div class="card-header">Data Science</div>
                     <div class="card-content">
                         <h3>Introduction to Data Science</h3>
@@ -156,7 +155,7 @@
                 </div>
             </div>
             <div class="card-row2">
-                <div class="card1">
+                <div class="card1 app-dev-card openPopup">
                     <div class="card-header">App Developer</div>
                     <div class="card-content">
                         <h3>Learn Kotlin To Making Android App</h3>
@@ -164,27 +163,36 @@
                         <div class="card-rating">⭐ 4.8</div>
                     </div>
                 </div>
-                <div class="card2">
-                    <div class="card-header">Machine Learning</div>
+                <div class="card2 csharp-card openPopup">
+                    <div class="card-header">CSharp Programming</div>
                     <div class="card-content">
-                        <h3>Understanding Machine Learning</h3>
-                        <p>7,500+ Students</p>
+                        <h3>Advanced CSharp Programming</h3>
+                        <p>8,000+ Students</p>
                         <div class="card-rating">⭐ 5.0</div>
                     </div>
                 </div>
-                <div class="card3">
-                    <div class="card-header">Web Developer</div>
+                <div class="card3 python-card openPopup">
+                    <div class="card-header">Python Developer</div>
                     <div class="card-content">
-                        <h3>Learn Basic Java Script</h3>
-                        <p>7,500+ Students</p>
+                        <h3>Python for Beginners</h3>
+                        <p>15,000+ Students</p>
                         <div class="card-rating">⭐ 4.9</div>
                     </div>
                 </div>
             </div>
         </div>
+        <div id="coursePopup" class="popup-modal">
+            <div class="popup-content">
+                <span class="close-btn">&times;</span>
+                <img src="Images/bg-popup.jpg" alt="Course Image" class="popup-image">
+                <h3>Basic Computer Science And Artificial Intelligence</h3>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Repellat, illum voluptate.</p>
+                <button class="popup-btn">Register</button>
+            </div>
+        </div>
     </section>
 
-    <!-- BOOTCAMP -->  <!-- BOOTCAMP -->  <!-- BOOTCAMP -->  <!-- BOOTCAMP -->
+    <!-- BOOTCAMP --> <!-- BOOTCAMP --> <!-- BOOTCAMP --> <!-- BOOTCAMP -->
 
     <section id="bootcamp" class="Bootcamp">
         <div class="bootcamps">
@@ -194,7 +202,7 @@
                     <h4>Prof. Abdullah S.kom</h4>
                     <h1>Bootcamp For Training <br>IELTS Examination</h1>
                     <h4>Harvad University</h4>
-                    <button>Join Now</button>
+                    <button class="openPopup2">Join Now</button>
                 </div>
                 <div class="right-side">
                     <div class="bootcamp-img">
@@ -203,9 +211,19 @@
                 </div>
             </div>
         </div>
+
+        <div id="bootcampPopup" class="popup-modal2">
+            <div class="popup-content2">
+                <span class="close-btn2">&times;</span>
+                <img src="Images/bg-popup.jpg"Bootcamp Image" class="popup-image2">
+                <h3>Bootcamp For Training IELTS Examination</h3>
+                <p>Instructor: Prof. Abdullah S.kom, Harvad University</p>
+                <button class="popup-btn2">Register</button>
+            </div>
+        </div>
     </section>
 
-    <!-- OUR TEAM -->  <!-- OUR TEAM -->  <!-- OUR TEAM -->  <!-- OUR TEAM -->
+    <!-- OUR TEAM --> <!-- OUR TEAM --> <!-- OUR TEAM --> <!-- OUR TEAM -->
 
     <section id="ourteam" class="ourteam">
         <h2>Our <span class="blue">Team</span></h2>
@@ -240,7 +258,7 @@
         </div>
     </section>
 
-    <!-- FAQ -->  <!-- FAQ -->  <!-- FAQ -->  <!-- FAQ -->
+    <!-- FAQ --> <!-- FAQ --> <!-- FAQ --> <!-- FAQ -->
 
     <section class="faq-section">
         <div class="faq-header">
@@ -305,8 +323,8 @@
             </div>
         </div>
     </section>
-    
-    <!-- FOOTER -->  <!-- FOOTER -->  <!-- FOOTER -->  <!-- FOOTER -->
+
+    <!-- FOOTER --> <!-- FOOTER --> <!-- FOOTER --> <!-- FOOTER -->
 
     <section class="footer">
         <div class="footer-container">
@@ -329,24 +347,167 @@
                 <div class="newsletter">
                     <form>
                         <input id="emailinput" type="email" placeholder="Enter your email" required>
-                        <button type="submit">Subscribe</button>  
+                        <button type="submit">Subscribe</button>
                     </form>
                 </div>
             </div>
         </div>
         <div class="footer-bottom">
             <p>© 2024 IDN Winners. All rights reserved.</p>
-            <div class="footer-links">
-                <a href="#">Terms</a>
-                <a href="#">Privacy</a>
-                <a href="#">Cookies</a>
-            </div>
         </div>
     </section>
 
     <!-- *** JAVA SCRIPT CODE *** -->
 
     <script>
+        document.addEventListener('DOMContentLoaded', function () {
+
+            // COURSE POPUP  // COURSE POPUP  // COURSE POPUP  // COURSE POPUP
+
+            var coursePopup = document.getElementById('coursePopup');
+            var closeBtn = document.querySelector('.close-btn');
+            var openPopupButtons = document.querySelectorAll('.openPopup');
+
+            openPopupButtons.forEach(function (button) {
+                button.addEventListener('click', function () {
+                    var courseTitle = button.querySelector('h3').textContent;
+                    coursePopup.querySelector('h3').textContent = courseTitle;
+
+                    coursePopup.style.display = 'flex';
+                });
+            });
+
+            closeBtn.addEventListener('click', function () {
+                coursePopup.style.display = 'none';
+            });
+
+            window.addEventListener('click', function (event) {
+                if (event.target == coursePopup) {
+                    coursePopup.style.display = 'none';
+                }
+            });
+
+            // BOOTCAMP POPUP  // BOOTCAMP POPUP  // BOOTCAMP POPUP  // BOOTCAMP POPUP
+
+            var bootcampPopup = document.getElementById('bootcampPopup');
+            var openPopupButtons = document.querySelectorAll('.openPopup2');
+            var closeBtn = document.querySelector('.close-btn2');
+
+            openPopupButtons.forEach(function (button) {
+                button.addEventListener('click', function () {
+                    bootcampPopup.style.display = 'flex';
+                });
+            });
+
+            closeBtn.addEventListener('click', function () {
+                bootcampPopup.style.display = 'none';
+            });
+
+            window.addEventListener('click', function (event) {
+                if (event.target == bootcampPopup) {
+                    bootcampPopup.style.display = 'none';
+                }
+            });
+
+            // ANIMASI COURSE  // ANIMASI COURSE  // ANIMASI COURSE  // ANIMASI COURSE
+
+            function showAllCourses(event) {
+                animateCourses('.main-container .card1, .main-container .card2, .main-container .card3');
+                setActiveButton(event.currentTarget);
+            }
+
+            function showCsharpCourses(event) {
+                animateCourses('.csharp-card');
+                setActiveButton(event.currentTarget);
+            }
+
+            function showHtmlCourses(event) {
+                animateCourses('.html-card');
+                setActiveButton(event.currentTarget);
+            }
+
+            function showPythonCourses(event) {
+                animateCourses('.python-card');
+                setActiveButton(event.currentTarget);
+            }
+
+            function showJavaCourses(event) {
+                animateCourses('.data-science-card');
+                setActiveButton(event.currentTarget);
+            }
+
+            function hideAllCourses(callback) {
+                var allCards = document.querySelectorAll('.main-container .card1, .main-container .card2, .main-container .card3');
+                var hideCount = allCards.length;
+
+                allCards.forEach(function (card) {
+                    card.classList.add('fadeOutDown');
+                    setTimeout(function () {
+                        card.style.display = 'none';
+                        card.classList.remove('fadeOutDown');
+                        hideCount--;
+
+                        if (hideCount === 0 && callback) {
+                            callback();
+                        }
+                    }, 500);
+                });
+            }
+
+            function animateCourses(selector) {
+                hideAllCourses(function () {
+                    var selectedCards = document.querySelectorAll(selector);
+                    selectedCards.forEach(function (card) {
+                        card.style.display = 'block';
+                        card.classList.add('fadeInUp');
+                        console.log('Added fadeInUp class to:', card);
+                        setTimeout(function () {
+                            card.classList.remove('fadeInUp');
+                        }, 500);
+                    });
+                });
+            }
+
+            function setActiveButton(button) {
+                document.querySelectorAll('.nav-course .personal-box').forEach(function (btn) {
+                    btn.classList.remove('active');
+                });
+                button.classList.add('active');
+
+                var courseSection = document.querySelector('.course');
+                if (button.querySelector('h1').textContent === 'All') {
+                    courseSection.classList.add('all-size');
+                    courseSection.classList.remove('default-size');
+                } else {
+                    courseSection.classList.add('default-size');
+                    courseSection.classList.remove('all-size');
+                }
+            }
+
+            document.querySelector('.nav-course').children[0].addEventListener('click', function (event) {
+                showAllCourses(event);
+                setActiveButton(event.currentTarget);
+            });
+            document.querySelector('.nav-course').children[1].addEventListener('click', function (event) {
+                showCsharpCourses(event);
+                setActiveButton(event.currentTarget);
+            });
+            document.querySelector('.nav-course').children[2].addEventListener('click', function (event) {
+                showHtmlCourses(event);
+                setActiveButton(event.currentTarget);
+            });
+            document.querySelector('.nav-course').children[3].addEventListener('click', function (event) {
+                showPythonCourses(event);
+                setActiveButton(event.currentTarget);
+            });
+            document.querySelector('.nav-course').children[4].addEventListener('click', function (event) {
+                showJavaCourses(event);
+                setActiveButton(event.currentTarget);
+            });
+        });
+
+        // FAQ SECTION  // FAQ SECTION  // FAQ SECTION  // FAQ SECTION
+
         const faqItems = document.querySelectorAll('.faq-item');
         const courseItem = document.querySelectorAll('.personal-box')
         const courseClick = document.querySelectorAll('.personal-box').values

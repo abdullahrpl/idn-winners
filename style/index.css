@@ -269,6 +269,8 @@ body {
     background-size: 560px;
     background-repeat: no-repeat;
     background-position: center;
+    background-image: url(/Images/bg-course.png);
+    background-size: 35%;
     animation: fadeInUp 1s ease-in-out forwards;
 }
 
@@ -419,14 +421,108 @@ body {
     display: inline-block;
 }
 
+.popup-modal, .popup-modal2 {
+    display: none;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    justify-content: center;
+    align-items: center;
+    z-index: 1000;
+}
+
+.popup-content, .popup-content2 {
+    background-color: white;
+    padding: 10px;
+    border-radius: 10px;
+    max-width: 400px;
+    width: 100%;
+    height: auto;
+    text-align: center;
+    box-shadow: 0 0 20px -5px #0056D2;
+    border: #0056D2 0.3px solid;
+    animation: fadeInUp 0.5s ease-in-out, pop 1.5s infinite alternate;
+    position: relative;
+}
+
+.popup-content h3, .popup-content2 h3{
+    font-size: 18px;
+    margin: 0 40px;
+}
+
+.popup-content p, .popup-content2 p{
+    font-size: 13px;
+    margin: 20px 50px;
+    margin-bottom: 50px;
+}
+
+.popup-image, .popup-image2 {
+    width: 100%;
+    border-radius: 10px;
+    margin-bottom: 20px;
+}
+
+.close-btn, .close-btn2 {
+    position: absolute;
+    top: 10px;
+    right: 15px;
+    font-size: 20px;
+    cursor: pointer;
+}
+
+.popup-btn, .popup-btn2 {
+    background-color: #0056D2;
+    color: white;
+    padding: 10px 40px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    margin-top: 5px;
+    transition: background-color 0.3s ease, transform 0.3s ease;
+    position: absolute;
+    bottom: -20px;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+.popup-btn:hover, .popup-btn2:hover {
+    transform: translateX(-50%) translateY(-10px);
+    box-shadow: 0 0 15px rgba(0, 86, 210, 0.5);
+}
+
+
+.all-size {
+    width: 100%;
+    height: 60%;
+    margin: 270px auto;
+}
+
+.default-size {
+    width: 100%;
+    height: 60%;
+    margin: 270px auto;
+}
+
+.fadeInUp {
+    animation: fadeInUp 0.5s ease-in-out forwards;
+    opacity: 0; 
+    visibility: hidden; 
+}
+
+.fadeOutDown {
+    animation: fadeOutDown 0.5s ease-in-out forwards;
+}
+
 /* OUR TEAM */  /* OUR TEAM */  /* OUR TEAM */  /* OUR TEAM */
 
 .ourteam {
     width: 100%;
     position: relative;
     text-align: center;
+    margin: 180px auto;
     animation: fadeInUp 1s ease-in-out forwards;
-    margin-top: 150px;
 }
 
 .ourteam::before {
@@ -704,7 +800,7 @@ body {
 /* FOOTER */  /* FOOTER */  /* FOOTER */  /* FOOTER */
 
 .footer {
-    background-color: #0056D2; /* Warna biru sesuai gambar */
+    background-color: #0056D2;
     color: #ffffff;
     padding: 50px 140px;
 }
@@ -809,7 +905,7 @@ body {
     border-top: 1px solid #d1d1d1;
     padding-top: 20px;
     display: flex;
-    justify-content: space-between;
+    justify-content: center;
     align-items: center;
     animation: fadeInUp linear;
     animation-timeline: view();
@@ -817,23 +913,14 @@ body {
 }
 
 .footer-bottom p {
+    text-align: center;
     margin: 0;
-}
-
-.footer-links {
-    display: flex;
-    gap: 20px;
-}
-
-.footer-links a {
-    color: #ffffff;
-    text-decoration: none;
-    font-size: 14px;
 }
 
 /* MEDIA RESPONSIVE */
 
 /* HP */
+
 @media (max-width: 430px) {
     body{
         display: flex;
@@ -841,7 +928,7 @@ body {
         align-items: center;
     }
     .menu {
-        width: 100%;  /* Stack columns on smaller screens */
+        width: 100%;
         margin: 0;
     }
     .navbar ul{
@@ -850,7 +937,7 @@ body {
     .navbar {
         margin: 10px auto;
         width: 50%;
-        flex-direction: row;  /* Adjust navbar layout */
+        flex-direction: row;
     }
 
     .text-title h1{
@@ -930,6 +1017,7 @@ body {
 
 /* --- KEYFREAM --- */
 
+
 @keyframes pop {
     from{
         transform: translateY(-15px);
@@ -938,15 +1026,28 @@ body {
     }
 }
 
+@keyframes fadeOutDown {
+    0% {
+        opacity: 1;
+        transform: translateY(0);
+    }
+    100% {
+        opacity: 0;
+        transform: translateY(70px);
+    }
+}
+
 @keyframes fadeInUp {
     0% {
         opacity: 0;
         transform: translateY(70px);
+        visibility: visible;
     }
 
     100% {
         opacity: 1;
         transform: translateY(0);
+        visibility: visible;
     }
 }
 
