@@ -36,7 +36,8 @@
     <script>
         const user = document.getElementById("user")
         const username = localStorage.getItem('username');
-        if(username){
+
+        if (username) {
             user.href = '#'
             document.getElementById('user').textContent = username;
         }
@@ -106,23 +107,23 @@
 
     <section class="course">
         <div class="nav-course">
-            <div onclick="" class="personal-box">
+            <div class="personal-box" value="all">
                 <img src="Images/all.png" alt="All Courses">
                 <h1>All</h1>
             </div>
-            <div onclick="" class="personal-box">
+            <div class="personal-box" value="csharp">
                 <img src="Images/c.png" alt="CSharp Course">
                 <h1>CSharp</h1>
             </div>
-            <div onclick="" class="personal-box">
+            <div class="personal-box" value="html">
                 <img src="Images/html.png" alt="HTML Course">
                 <h1>HTML</h1>
             </div>
-            <div onclick="" class="personal-box">
+            <div class="personal-box" value="python">
                 <img src="Images/python.png" alt="Python Course">
                 <h1>Python</h1>
             </div>
-            <div onclick="" class="personal-box">
+            <div class="personal-box" value="java">
                 <img src="Images/javas.png" alt="Java Course">
                 <h1>Java</h1>
             </div>
@@ -187,6 +188,7 @@
 
     <section id="bootcamp" class="Bootcamp">
         <div class="bootcamps">
+            <h1 class="title-bootcamp"><span class="blue">Bootcamp</span></h1>
             <div class="bootcamp">
                 <div class="left-side">
                     <h4>Prof. Abdullah S.kom</h4>
@@ -347,6 +349,7 @@
     <script>
         const faqItems = document.querySelectorAll('.faq-item');
         const courseItem = document.querySelectorAll('.personal-box')
+        const courseClick = document.querySelectorAll('.personal-box').values
 
         courseItem.forEach(item => {
             item.addEventListener('click', () => {
