@@ -34,6 +34,28 @@ body {
     z-index: 1000;
     animation: fadeInDown 1s ease-in-out forwards;
 }
+.sidebar{
+    position: fixed;
+    height: 40%;
+    top: 0;
+    right: 0;
+    height: 100vh;
+    width: 250px;
+    z-index: 999;
+    background-color: rgba(255, 255, 255, 0.495);
+    backdrop-filter: blur(10px);
+    box-shadow: -10px 0 10px rgba(0, 0, 0, 0.1);
+    display: none;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: flex-start;
+}
+.sidebar li{
+    width: 100%;
+}
+.sidebar a{
+    width: 100%;
+}
 
 .idn-winners {
     font-size: 18px;
@@ -116,7 +138,6 @@ body {
 .content {
     width: 85%;
     margin: 60px auto;
-    position: sticky;
     display: flex;
     align-items: center;
     justify-content: space-between;
@@ -645,6 +666,7 @@ body {
 .title-bootcamp{
     font-size: 40px;
     display: none;
+    margin-top: 100px;
     margin-bottom: 100px;
     animation: fadeInUp linear;
     animation-timeline: view();
@@ -921,11 +943,18 @@ body {
 
 /* HP */
 
-@media (max-width: 430px) {
+@media (max-width: 450px) {
     body{
         display: flex;
         flex-direction: column;
         align-items: center;
+    }
+    /* navbar */
+    .navbar{
+        width: 65%;
+    }
+    .logo{
+        margin-right: 50px;
     }
     .menu {
         width: 100%;
@@ -934,26 +963,83 @@ body {
     .navbar ul{
         display: none;
     }
-    .navbar {
-        margin: 10px auto;
-        width: 50%;
-        flex-direction: row;
-    }
+    /* navbar */
 
+    /* hero */
+    .content{
+        width: 85%;
+        flex-direction: column;
+        margin-left: 25px;
+    }
     .text-title h1{
-        font-size: 20px;
+        font-size: 40px;
+        width: 100%;
     }
     .text-title p{
-        font-size: 10px;
+        font-size: 13px;
     }
+    .image img{
+        display: none;
+    }
+    .text-footer{
+        flex-direction: column;
+        text-align: center;
+    }
+    /* hero */
+
+    /* About */
+    .about-us{
+        width: 100%;
+    }
+    .aboutUs-content{
+        width: 100%;
+        flex-direction: column;
+        text-align: left;
+    }
+    .aboutUs-text{
+        margin-right: 50px;
+    }
+    .aboutUs-logo img{
+        display: none;
+    }
+    .Idn-Winners-Is p{
+        text-align: right;
+    }
+    /* About */
 
     /* course */
     .course{
+        display: none;
+    }
+
+    /* .nav-course{
+        width: 100%;
+    }
+
+    .course{
+        height: 100%;
+        margin: 100px auto;
+    }
+    .card-row1{
+        flex-direction: column;
+    } */
+    /* course */
+
+    /* course */
+    .nav-course{
+        width: 50%;
+    }
+
+    .course{
+        height: 100%;
         margin: 100px auto;
     }
     /* course */
 
     /* bootcamp */
+    .Bootcamp{
+        height: 70%;
+    }
     .bootcamp{
         height: 350px;
         animation: fadeInUp linear;
@@ -979,11 +1065,36 @@ body {
     }
     /* bootcamp */
 
+    /* ourteam */
+    .ourteam h2{
+        margin-top: 100px;
+    }
+    .dev-cards{
+        display: flex;
+        justify-content: space-evenly;
+        flex-wrap: wrap;
+        gap: 20px;
+    }
+    .dev-card1, .dev-card2, .dev-card3{
+        animation: fadeInUp linear;
+        animation-timeline: view();
+        animation-range: entry 0% cover 20%;
+        margin-top: 50px;
+    }
+    /* ourteam */
+
+    /* FAQ */
+    .faq-section{
+        margin: 100px auto;
+    }
+    /* FAQ */
+
     /* footer */
     .footer-container{
         flex-direction: column;
     }
     .footer{
+        width: 100%;
         padding: 50px 30px;
     }
     .footer-menu{

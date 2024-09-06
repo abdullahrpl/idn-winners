@@ -40,6 +40,10 @@ body {
     font-weight: 700;
     cursor: pointer;
 }
+.idn-winners a{
+    text-decoration: none;
+    color: black;
+}
 
 .blue {
     background: linear-gradient(to right, #0056D2, #588DF7);

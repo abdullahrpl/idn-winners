@@ -146,6 +146,33 @@ button:hover {
 }
 
 
+/* RESPONSIVE */
+
+@media (max-width: 450px) {
+    body{
+        width: 100vw;
+        height: 100vh;
+    }
+    /* LEFT */
+    .left{
+        display: none;
+    }
+    /* RIGHT */
+    .right{
+        width: 100%;
+        border-radius: 0;
+        justify-content: center;
+    }
+    .right-title{
+        margin-top: 0;
+        margin-bottom: 20px;
+    }
+    .right-title h1{
+        position: static ;
+        font-size: 30px;
+    }
+}
+
 /* KEYFRAMES */
 
 @keyframes fadeInUp {
