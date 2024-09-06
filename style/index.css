@@ -987,19 +987,21 @@ body {
         justify-content: center;
     }
     .nav-course{
+        height: auto;
+        position: static;
         margin-left: 15px;
         gap: 12px;
-        overflow-x: auto;
+        overflow-x: scroll;
     }
-    .nav-course::-webkit-scrollbar{
-        width: 0;
+    .java{
+        margin-right: 20px;
     }
     .main-container{
         justify-content: center;
         width: 100%;
     }
     .card-row1, .card-row2{
-        width: 100%;
+        width: 450px;
         gap: 10px;
         display: flex;
         align-items: center;
@@ -1007,16 +1009,18 @@ body {
         scroll-behavior: smooth;
         padding: 10px 0;
     }
-    .card-row2::-webkit-scrollbar{
-        width: 0;
-    }
+    .card-row2::-webkit-scrollbar,
     .card-row1::-webkit-scrollbar{
-        width: 0;
+        display: none;
+        width: 100%;
     }
     .card1, .card2, .card3{
         flex: none;
         flex-direction: column;
         min-width: 300px;
+    }
+    .card1{
+        margin-left: 700px;
     }
     .card2{
         width: 200px;
