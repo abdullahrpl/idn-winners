@@ -923,6 +923,7 @@ body {
 
 @media (max-width: 450px) {
     body{
+        overflow-x: hidden;
         display: flex;
         flex-direction: column;
         align-items: center;
@@ -966,10 +967,8 @@ body {
     /* hero */
 
     /* About */
-    .about-us{
-        width: 100%;
-    }
     .aboutUs-content{
+        width: 455px;
         flex-direction: column;
         text-align: center;
     }
@@ -985,21 +984,37 @@ body {
         display: flex;
         flex-direction: column;
         align-items: center;
+        justify-content: center;
     }
     .nav-course{
-        overflow-x: scroll;
+        margin-left: 15px;
+        gap: 12px;
+        overflow-x: auto;
+    }
+    .nav-course::-webkit-scrollbar{
+        width: 0;
     }
     .main-container{
         justify-content: center;
         width: 100%;
     }
     .card-row1, .card-row2{
+        width: 100%;
+        gap: 10px;
         display: flex;
         align-items: center;
-        overflow-x: scroll;
+        overflow-x: auto;
+        scroll-behavior: smooth;
+        padding: 10px 0;
+    }
+    .card-row2::-webkit-scrollbar{
+        width: 0;
+    }
+    .card-row1::-webkit-scrollbar{
+        width: 0;
     }
     .card1, .card2, .card3{
-        display: flex;
+        flex: none;
         flex-direction: column;
         min-width: 300px;
     }
@@ -1066,7 +1081,7 @@ body {
         flex-direction: column;
     }
     .footer{
-        width: 100%;
+        width: 390px;
         padding: 50px 30px;
     }
     .footer-menu{
