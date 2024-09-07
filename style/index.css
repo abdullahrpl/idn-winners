@@ -137,6 +137,7 @@ body {
 }
 
 .text-title p {
+    width: 60%;
     margin-bottom: 65px;
     font-size: 15px;
     font-weight: 400;
@@ -921,7 +922,7 @@ body {
 
 /* HP */
 
-@media (max-width: 450px) {
+@media (max-width: 600px) {
     body{
         overflow-x: hidden;
         display: flex;
@@ -954,9 +955,10 @@ body {
         display: flex;
         flex-direction: column;
         align-items: center;
+        margin-top: -20px;
     }
     .content{
-        width: 85%;
+        width: 87%;
         flex-direction: column;
         margin-left: 25px;
     }
@@ -966,12 +968,12 @@ body {
     }
     .text-title p{
         font-size: 13px;
+        width: 100%;
     }
     .image img{
         display: none;
     }
     .footer-hero{
-        margin-bottom: 100px;
         margin-right: 20px;
     }
     .text-footer{
@@ -983,13 +985,11 @@ body {
     /* About */
     .aboutUs-content{
         margin-bottom: 70px;
+        margin-top: 300px;
         margin-left: 35px;
         width: 435px;
         flex-direction: column;
         text-align: center;
-    }
-    .aboutUs-text{
-        margin-right: 50px;
     }
     /* About */
 
@@ -1054,30 +1054,37 @@ body {
 
     /* bootcamp */
     .Bootcamp{
+        margin-top: -40px;
         margin-left: 60px;
         height: 70%;
     }
     .bootcamp{
-        height: 350px;
+        height: 375px;
         animation: fadeInUp linear;
         transition: 0.3s ease-in-out;
         animation-timeline: view();
         animation-range: entry 0% cover 30%;
     }
     .title-bootcamp{
-        margin: 0;
         margin-bottom: 30px;
         display: inline;
+        width: 300px;
     }
     .left-side{
         animation: none;
     }
     .left-side h4{
-        width: 200px;
+        width: 210px;
+        text-align: center;
     }
     .left-side h1{
-        width: 250px;
+        width: 215px;
         font-size: 25px;
+        text-align: center;
+    }
+    .left-side button{
+        width: 215px;
+        align-items: center;
     }
     .right-side{
         display: none;
@@ -1086,17 +1093,11 @@ body {
 
     /* ourteam */
     .ourteam{
-        margin-top: 60px;
+        margin-top: 200px;
         margin-left: 20px;
-    }
-    .ourteam h2{
-        margin-top: 0;
     }
     .ourteam::before{
         width: 421px;
-    }
-    .ourteam h2{
-        margin-top: 100px;
     }
     .dev-cards{
         display: flex;
@@ -1140,7 +1141,6 @@ body {
     }
     .newsletter input{
         margin-right: 0;
-        margin-bottom: 10px;
     }
     .footer-right p{
         margin-top: 10px;
@@ -1152,6 +1152,167 @@ body {
         flex-direction: column;
     }
     .footer-links{
+        margin-top: 10px;
+    }
+}
+
+@media (min-width: 651px) and (max-width: 1024px) {
+    body {
+        overflow-x: hidden;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    /* Navbar */
+    .navbar {
+        margin: 20px auto;
+        margin-left: 40px;
+        width: 85%;
+        position: sticky;
+        top: 0;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+    .logo {
+        margin-right: auto;
+    }
+    .menu {
+        margin: 0px auto;
+    }
+    .navbar ul {
+        gap: 5px;
+    }
+    .navbar ul li{
+        margin: 0 10px;
+    }
+    .hero{
+        width: 100%;
+        margin-left: 40px;
+    }
+    .text-title h1{
+        font-size: 40px;
+    }
+    .image img{
+        width: 300px;
+    }
+    .footer-hero {
+        margin: 0 auto;
+    }
+    .text-footer {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .aboutUs-content {
+        margin: 50px auto;
+        width: 95%;
+        text-align: center;
+    }
+
+    .course {
+        width: 80%;
+        margin: 70px auto;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
+    .nav-course {
+        margin-bottom: 20px;
+        width: 100%;
+        display: flex;
+        gap: 15px;
+        overflow-x: auto;
+    }
+    .main-container {
+        margin: 0;
+        width: 100%;
+    }
+    .card-row1, .card-row2 {
+        width: 100%;
+        display: flex;
+        gap: 20px;
+        align-items: center;
+        overflow-x: auto;
+        scroll-behavior: smooth;
+    }
+    .card1, .card2, .card3 {
+        flex: none;
+        flex-direction: column;
+        min-width: 250px;
+        margin: 0 auto;
+    }
+
+    .Bootcamp {
+        margin: 0 auto;
+        width: 85%;
+    }
+    .bootcamp {
+        height: auto;
+        animation: fadeInUp linear;
+        transition: 0.3s ease-in-out;
+    }
+    .title-bootcamp {
+        margin-bottom: 20px;
+        text-align: center;
+    }
+    .left-side h4, .left-side h1, .left-side button {
+        width: 100%;
+        text-align: center;
+    }
+    .right-side {
+        display: none;
+    }
+
+    .ourteam {
+        margin: 50px auto;
+        width: 85%;
+    }
+    .ourteam::before {
+        width: 100%;
+    }
+    .dev-cards {
+        display: flex;
+        justify-content: space-around;
+        flex-wrap: wrap;
+        gap: 15px;
+    }
+    .dev-card1, .dev-card2, .dev-card3 {
+        margin-top: 20px;
+    }
+
+    .faq-section {
+        margin: 20px auto;
+        width: 85%;
+    }
+
+    .footer-container {
+        flex-direction: column;
+        width: 100%;
+    }
+    .footer {
+        width: 85%;
+        padding: 20px;
+        margin: 0 auto;
+    }
+    .footer-menu {
+        display: none;
+    }
+    .footer-right {
+        text-align: center;
+        flex-direction: column;
+    }
+    .newsletter input {
+        margin: 10px 0;
+        width: 100%;
+    }
+    .footer-bottom {
+        flex-direction: column;
+        text-align: center;
+    }
+    .footer-links {
         margin-top: 10px;
     }
 }
