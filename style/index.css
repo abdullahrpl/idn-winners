@@ -928,8 +928,10 @@ body {
         flex-direction: column;
         align-items: center;
     }
+
     /* navbar */
     .navbar{
+        margin-left: 25px;
         width: 65%;
     }
     .logo{
@@ -945,6 +947,13 @@ body {
     /* navbar */
 
     /* hero */
+    .hero{
+        text-align: center;
+        margin-left: 50px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
     .content{
         width: 85%;
         flex-direction: column;
@@ -960,6 +969,9 @@ body {
     .image img{
         display: none;
     }
+    .footer-hero{
+        margin-right: 20px;
+    }
     .text-footer{
         flex-direction: column;
         text-align: center;
@@ -968,7 +980,8 @@ body {
 
     /* About */
     .aboutUs-content{
-        width: 455px;
+        margin-left: 35px;
+        width: 435px;
         flex-direction: column;
         text-align: center;
     }
@@ -979,7 +992,7 @@ body {
 
     /* Course */
     .course{
-        width: 100vw;
+        width: 422px;
         margin: 100px auto;
         display: flex;
         flex-direction: column;
@@ -987,21 +1000,22 @@ body {
         justify-content: center;
     }
     .nav-course{
+        width: 422px;
         height: auto;
         position: static;
-        margin-left: 15px;
+        margin-left: 20px;
         gap: 12px;
         overflow-x: scroll;
     }
     .java{
-        margin-right: 20px;
+        margin-right: 15px;
     }
     .main-container{
         justify-content: center;
         width: 100%;
     }
     .card-row1, .card-row2{
-        width: 450px;
+        width: 422px;
         gap: 10px;
         display: flex;
         align-items: center;
@@ -1022,6 +1036,9 @@ body {
     .card1{
         margin-left: 700px;
     }
+    .coba{
+        margin: 0;
+    }
     .card2{
         width: 200px;
     }
@@ -1029,6 +1046,7 @@ body {
 
     /* bootcamp */
     .Bootcamp{
+        margin-left: 60px;
         height: 70%;
     }
     .bootcamp{
@@ -1057,6 +1075,12 @@ body {
     /* bootcamp */
 
     /* ourteam */
+    .ourteam{
+        margin-left: 20px;
+    }
+    .ourteam::before{
+        width: 421px;
+    }
     .ourteam h2{
         margin-top: 100px;
     }
@@ -1076,7 +1100,8 @@ body {
 
     /* FAQ */
     .faq-section{
-        margin: 100px auto;
+        margin-left: 20px;
+        width: 100%;
     }
     /* FAQ */
 
@@ -1085,7 +1110,7 @@ body {
         flex-direction: column;
     }
     .footer{
-        width: 390px;
+        width: 395px;
         padding: 50px 30px;
     }
     .footer-menu{
