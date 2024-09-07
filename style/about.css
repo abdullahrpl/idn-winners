@@ -175,6 +175,61 @@ body {
 .image img {
     width: 20%;
 }
+@media (max-width: 650px) {
+    body{
+        overflow-x: hidden;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    /* navbar */
+    .navbar{
+        margin-left: 25px;
+        width: 65%;
+    }
+    .logo{
+        margin-right: 50px;
+    }
+    .menu {
+        width: 100%;
+        margin: 0;
+    }
+    .navbar ul{
+        display: none;
+    }
+    /* navbar */
+
+    /* hero */
+    .hero{
+        margin-bottom: 70px;
+        text-align: center;
+        margin-left: 50px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        margin-top: -20px;
+    }
+    .title h1{
+        font-size: 40px;
+        width: 100%;
+    }
+    .description{
+        flex-direction: column;
+    }
+    .description-left{
+        text-align: center;
+        padding-bottom: 20px;
+        margin-bottom: 20px;
+        border-right: none;
+        border-bottom: 0.7px solid #00000038;
+    }
+    .description-right{
+        text-align: center;
+    }
+    .image{
+        display: none;
+    }
 
 /* RESPONSIVE */
 
