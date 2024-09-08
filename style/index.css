@@ -922,7 +922,7 @@ body {
 
 /* HP */
 
-@media (max-width: 600px) {
+@media (max-width: 390px) {
     body{
         overflow-x: hidden;
         display: flex;
@@ -1156,7 +1156,7 @@ body {
     }
 }
 
-@media (min-width: 651px) and (max-width: 1024px) {
+@media (min-width: 820px) and (max-width: 822px) {
     body {
         overflow-x: hidden;
         display: flex;
@@ -1166,6 +1166,7 @@ body {
 
     /* Navbar */
     .navbar {
+        gap: 50px;
         margin: 20px auto;
         margin-left: 40px;
         width: 85%;
@@ -1174,6 +1175,9 @@ body {
         display: flex;
         align-items: center;
         justify-content: center;
+    }
+    .navbar ul{
+        width: 150%;
     }
     .logo {
         margin-right: auto;
@@ -1205,6 +1209,13 @@ body {
         text-align: center;
     }
 
+    /* ABOUT */
+    .aboutUs-logo{
+        /* width: 50px; */
+    }
+    .aboutUs-logo img{
+        width: 170px;
+    }
     .aboutUs-content {
         margin: 50px auto;
         width: 95%;
