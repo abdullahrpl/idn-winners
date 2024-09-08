@@ -1169,7 +1169,7 @@ body {
         gap: 50px;
         margin: 20px auto;
         margin-left: 40px;
-        width: 85%;
+        width: 87%;
         position: sticky;
         top: 0;
         display: flex;
@@ -1208,20 +1208,25 @@ body {
         flex-direction: column;
         text-align: center;
     }
-
-    /* ABOUT */
-    .aboutUs-logo img{
-        width: 170px;
-    }
     .aboutUs-content {
+        width: 85%;
         margin: 50px auto;
-        width: 95%;
-        text-align: center;
+        margin-left: 150px;
+    }
+    .aboutUs-text{
+        text-align: start;
+    }
+    .aboutUs-logo img{
+        width: 50px;
+    }
+    .Idn-Winners-Is p{
+        text-align: end;
     }
 
     .course {
-        width: 80%;
+        width: 100%;
         margin: 70px auto;
+        margin-left:45px;
         display: flex;
         flex-direction: column;
         align-items: center;
@@ -1255,28 +1260,32 @@ body {
 
     .Bootcamp {
         margin: 0 auto;
-        width: 85%;
+        margin-left: 45px;
+        width: 100%;
     }
     .bootcamp {
         height: auto;
-        animation: fadeInUp linear;
-        transition: 0.3s ease-in-out;
     }
     .title-bootcamp {
         margin-bottom: 20px;
-        text-align: center;
+        text-align: start;
     }
-    .left-side h4, .left-side h1, .left-side button {
+    .left-side{
+        justify-content: center;
+    }
+    .left-side h4, .left-side h1{
         width: 100%;
-        text-align: center;
+        margin-right: 100px;
+        text-align: start;
     }
     .right-side {
-        display: none;
+        width: 100%;
     }
 
     .ourteam {
         margin: 50px auto;
-        width: 85%;
+        width: 100%;
+        margin-left: 45px;
     }
     .ourteam::before {
         width: 100%;
@@ -1292,35 +1301,43 @@ body {
     }
 
     .faq-section {
-        margin: 20px auto;
-        width: 85%;
+        margin: 50px auto;
+        margin-left: 45px;
+        margin-bottom: 150px;
+        width: 100%;
     }
 
-    .footer-container {
+    .footer-container{
         flex-direction: column;
-        width: 100%;
     }
-    .footer {
-        width: 85%;
-        padding: 20px;
-        margin: 0 auto;
+    .footer{
+        width: 110%;
+        margin-left: 80px;
+        padding: 50px 30px;
     }
-    .footer-menu {
+    .footer-menu{
         display: none;
     }
-    .footer-right {
+    .footer-right{
+        animation: fadeInUp linear;
+        animation-timeline: view();
+        animation-range: entry 0% cover 10%;
         text-align: center;
         flex-direction: column;
     }
-    .newsletter input {
-        margin: 10px 0;
-        width: 100%;
+    .newsletter input{
+        margin-right: 0;
     }
-    .footer-bottom {
+    .footer-right p{
+        margin-top: 10px;
+    }
+    .footer-logo{
+        display: none;
+    }
+    .footer-bottom{
         flex-direction: column;
-        text-align: center;
     }
-    .footer-links {
+    .footer-links{
         margin-top: 10px;
     }
 }
